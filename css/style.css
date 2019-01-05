@@ -90,6 +90,12 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+
+  background-color: #000000;
+}
+
 .main-navigation {
   display: -webkit-flex;
   display: -ms-flex;
@@ -107,10 +113,28 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.inner-page .main-navigation {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .main-header-logo {
   order: 2;
   width: 368px;
   height: 153px;
+}
+
+.inner-page .main-header-logo {
+  -webkit-order: 0;
+  -ms-order: 0;
+  order: 0;
+
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -147,6 +171,10 @@ input[type="radio"].visually-hidden {
   width: 140px;
   margin: 0;
   padding: 0;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -308,11 +336,19 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
   list-style: none;
 }
 
@@ -327,6 +363,17 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-carrent {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
 }
 
 .filter fieldset {
@@ -354,11 +401,27 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -394,6 +457,9 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -467,6 +533,10 @@ input[type="radio"].visually-hidden {
   background-repeat: repeat;
 }
 
+.inner-page .main-footer {
+  margin-top: 45px;
+}
+
 .main-footer .container {
   display: -webkit-flex;
   display: -ms-flex;
@@ -507,7 +577,7 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0;
   margin-left: auto;
-  
+
   text-align: center;
 }
 
